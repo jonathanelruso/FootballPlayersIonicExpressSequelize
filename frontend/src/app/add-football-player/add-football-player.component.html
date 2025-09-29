@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Agregar Jugador</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()">Cerrar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="playerForm" (ngSubmit)="save()">
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input formControlName="name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Edad</ion-label>
+      <ion-input type="number" formControlName="age"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Club</ion-label>
+      <ion-input formControlName="club"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Posición</ion-label>
+      <ion-select formControlName="position">
+        <ion-select-option value="Goalkeeper">Goalkeeper</ion-select-option>
+        <ion-select-option value="Defender">Defender</ion-select-option>
+        <ion-select-option value="Midfielder">Midfielder</ion-select-option>
+        <ion-select-option value="Striker">Striker</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-button expand="full" type="submit" [disabled]="playerForm.invalid"
+      >Guardar</ion-button
+    >
+  </form>
+</ion-content>

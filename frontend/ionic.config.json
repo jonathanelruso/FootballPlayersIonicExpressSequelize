@@ -1,0 +1,7 @@
+{
+  "name": "AE1_JonathanMoreraApaza",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
