@@ -40,3 +40,9 @@ You can **add, edit, delete and view players** with details like name, age, club
    npm install
    node index.js
    ```
+
+## Postman Collection
+
+You can test all API endpoints using this Postman collection:
+
+https://jonathan-8537157.postman.co/workspace/Jonathan's-Workspace~32396ddf-5dc7-42de-8aef-e7bc71db5d66/collection/43754671-6631eba1-dcfe-40e0-ac9d-3d4899aca5f1?action=share&source=copy-link&creator=43754671
